@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    font-family: 'Roboto Condensed', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 3vw;
+}
+
+.card {
+    cursor: pointer;
+    width: 300px;
+    height: 380px;
+    box-shadow: 0 60px 60px -50px #000;
+    border-radius: 10px;
+    color: transparent;
+    padding: 16px;
+    display: grid;
+    align-content: space-between;
+    outline: 1px solid transparent;
+    outline-offset: -8px;
+    background-repeat: no-repeat;
+    transition: all 1s 0.2s, background 0.7s;
+}
+
+.card:hover {
+    outline: 1px solid #fff;
+    color: #fff;
+}
+
+.card_1 {
+    background-image: url("../img/cards/1.jpg");
+    background-size: 420px;
+    background-position: 60% 18%;
+    filter: contrast(110%) brightness(120%);
+}
+
+.card_1:hover {
+    background-size: 700px;
+    background-position: 20% 40%;
+}
+
+.card_2 {
+    background-image: url("../img/cards/2.jpg");
+    background-size: 330px;
+    background-position: 35% 38%;
+    filter: contrast(100%) brightness(160%);
+}
+
+.card_2:hover {
+    background-size: 610px;
+    background-position: 0% 67%;
+}
+
+.card_3 {
+    background-image: url("../img/cards/3.jpg");
+    background-size: 410px;
+    background-position: 40% 0%;
+    filter: contrast(105%) brightness(93%);
+}
+
+.card_3:hover {
+    background-size: 700px;
+    background-position: 3% 35%;
+}
+
+.card__title {
+    font-size: 24px;
+    font-weight: 700;
+    text-shadow: 0 2px 4px transparent;
+    transition: text-shadow 1s 0.2s;
+}
+
+.card__title:hover {
+    text-shadow: 0 2px 4px #000;
+}
+
+.card__social {
+    font-size: 18px;
+    display: grid;
+    grid-gap: 8px;
+}
